@@ -1,0 +1,31 @@
+# Project Context
+이 프로젝트는 교통약자를 위한 지하철 경로 안내 시스템입니다.
+- Frontend: React 18, TypeScript, Vite, Tailwind CSS
+- Backend: Spring Boot 3.2, Java 17, JPA
+- Engine: C++ 17, cpp-httplib, CMake
+- DB: PostgreSQL 15, PostGIS 3.3
+
+# Coding Guidelines
+
+## General
+- 모든 코드는 모듈화되고, 읽기 쉬워야 합니다.
+- 주석은 영어로 작성합니다.
+
+## Backend (Java/Spring)
+- Controller -> Service -> Repository 계층 구조를 엄격히 준수하세요.
+- Lombok을 사용하여 코드를 간소화하세요.
+- API 응답은 항상 표준 DTO(ApiResponse)로 감싸서 반환하세요.
+
+## Frontend (React/TS)
+- Functional Component와 Hooks 패턴을 사용하세요.
+- 스타일링은 Tailwind CSS 유틸리티 클래스를 우선 사용하세요.
+- 상태 관리는 Zustand(클라이언트), TanStack Query(서버)를 사용하세요.
+
+## C++ Engine
+- C++17 표준을 따르세요.
+- 메모리 관리에 유의하고, 가능한 스마트 포인터(std::unique_ptr, std::shared_ptr)를 사용하세요.
+- 헤더 파일에는 `#pragma once`를 사용하세요.
+
+## Database
+- 테이블 및 컬럼 이름은 snake_case를 사용하세요.
+- PostGIS 공간 쿼리 사용 시 인덱스 효율을 고려하세요.
