@@ -1,0 +1,15 @@
+{
+  "name": "advanced-kindmap-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "1인 풀스택 지하철 경로 안내 시스템을 위한 모노레포",
+  "workspaces": [
+    "services/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "build": "echo \"Define per-service build scripts in each workspace\"",
+    "lint": "echo \"Define per-service lint scripts in each workspace\"",
+    "test": "echo \"Define per-service test scripts in each workspace\""
+  }
+}
